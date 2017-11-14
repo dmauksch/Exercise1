@@ -1,9 +1,17 @@
+import java.util.Scanner;
 
 public class HelloWorld {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+
 		System.out.println("Hello ASE2017 - How are you? :)");
+
+		System.out.print("Please enter your name: ");
+		String name = scanner.next();
+
+		HelloUser hello = new HelloUser(name);
+		hello.greetUser();
 	}
 
 }
